@@ -87,5 +87,3 @@ enum Planet2: Int {
   case earth
   case mars
 }
-
-
