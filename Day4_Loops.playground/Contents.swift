@@ -85,6 +85,6 @@ while true {
   counter += 1
   
   if counter == 273 {
-    break
+    break // to end infinite loop
   }
 }
