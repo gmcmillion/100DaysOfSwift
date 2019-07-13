@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DaL-1l-QnT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtU-Cg-XsA">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoD-2D-Ize">
+                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMc-Ft-a6Q">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NoD-2D-Ize" firstAttribute="top" secondItem="gtU-Cg-XsA" secondAttribute="bottom" constant="30" id="8y2-tO-a4t"/>
+                            <constraint firstItem="gtU-Cg-XsA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="E0l-WE-AN2"/>
+                            <constraint firstItem="NoD-2D-Ize" firstAttribute="centerX" secondItem="gtU-Cg-XsA" secondAttribute="centerX" id="XH3-zH-E7J"/>
+                            <constraint firstItem="gtU-Cg-XsA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eek-1j-YQd"/>
+                            <constraint firstItem="iMc-Ft-a6Q" firstAttribute="top" secondItem="NoD-2D-Ize" secondAttribute="bottom" constant="30" id="i81-p3-obc"/>
+                            <constraint firstItem="iMc-Ft-a6Q" firstAttribute="centerX" secondItem="NoD-2D-Ize" secondAttribute="centerX" id="wiQ-WA-3rS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="586-s9-kVb"/>
+                    <connections>
+                        <outlet property="button1" destination="gtU-Cg-XsA" id="dls-ve-ZnK"/>
+                        <outlet property="button2" destination="NoD-2D-Ize" id="Wzj-Cg-YX6"/>
+                        <outlet property="button3" destination="iMc-Ft-a6Q" id="4Ok-Bh-DPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216" y="779"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GOD-e1-K7V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DaL-1l-QnT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u9D-V4-uoD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QR4-sp-12N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdf-9a-DPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.68115942028987" y="778.79464285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+    </resources>
+</document>
